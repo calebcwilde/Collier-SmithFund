@@ -830,6 +830,53 @@ header {
     color:var(--muted);
 }
 
+/* MCS HISTORICAL RETURNS CHART */
+
+.chart-card .chart-heading {
+    display:block;
+}
+
+.chart-subtitle {
+    color:var(--muted);
+    font-size:12px;
+    line-height:1.5;
+    margin:6px 0 0;
+}
+
+.historical-chart {
+    margin-top:23px;
+    padding:24px 14px 12px;
+    border:1px solid var(--border);
+    background:linear-gradient(to top,#fff,#fbfcfd);
+    overflow-x:auto;
+}
+
+.historical-chart .returns-chart {
+    width:100%;
+    min-width:510px;
+    height:auto;
+    display:block;
+}
+
+.returns-chart .grid-line {
+    stroke:#E5EAF0;
+    stroke-width:1;
+}
+
+.returns-chart .data-label {
+    fill:var(--navy);
+    font-family:"DM Sans",Arial,sans-serif;
+    font-size:11px;
+    font-weight:700;
+}
+
+.returns-chart .year-label {
+    fill:#586572;
+    font-family:"DM Sans",Arial,sans-serif;
+    font-size:12px;
+    font-weight:600;
+}
+
 /* MARKET OUTLOOK */
 
 .market {
@@ -1535,7 +1582,7 @@ header {
         </div>
 
         <div class="metric">
-            <strong>10.21%</strong>
+            <strong>10.20%</strong>
             <span>Average Net Return</span>
         </div>
 
@@ -1769,10 +1816,11 @@ header {
                 <div class="benefit">
                     <div class="checkmark">✓</div>
                     <div>
-                        <h3>Professional Underwriting &amp; Servicing</h3>
+                        <h3>Professional, Conservative Underwriting</h3>
                         <p>
-                            A structured approach to evaluating
-                            and administering mortgage loans.
+                            A disciplined, conservative approach
+                            to evaluating mortgage loans and
+                            assessing credit risk.
                         </p>
                     </div>
                 </div>
@@ -1837,33 +1885,89 @@ header {
             <div class="chart-card reveal">
 
                 <div class="chart-heading">
-                    <strong>Annual Net Return History</strong>
-                    <span>Performance Chart</span>
+                    <strong>MCS Fund Historical Returns</strong>
+                    <p class="chart-subtitle">
+                        Average annualized return on capital by calendar year
+                    </p>
                 </div>
 
-                <!--
-                REPLACE THIS PLACEHOLDER WITH YOUR
-                ACTUAL VERIFIED PERFORMANCE CHART.
+                <div class="historical-chart" id="performance-chart">
 
-                Example:
-                <img src="performance-chart.png"
-                     alt="Historical annual fund returns"
-                     style="width:100%;">
-                -->
+                    <svg class="returns-chart"
+                         viewBox="0 0 530 170"
+                         role="img"
+                         aria-label="MCS Fund historical annualized return on capital from 2017 through 2025. Highest return 11.89 percent in 2017, lowest return 9.56 percent in 2020.">
 
-                <div class="chart-placeholder"
-                     id="performance-chart">
+                        <!-- Reference grid lines -->
+                        <line x1="33" y1="29.8" x2="521" y2="29.8" class="grid-line"/>
+                        <line x1="33" y1="64.8" x2="521" y2="64.8" class="grid-line"/>
+                        <line x1="33" y1="99.9" x2="521" y2="99.9" class="grid-line"/>
+                        <line x1="33" y1="135" x2="521" y2="135" class="grid-line"/>
 
-                    <div class="chart-message">
-                        <div class="chart-icon">▥</div>
+                        <!-- 2017 -->
+                        <g>
+                            <rect x="38" y="30.7" width="36" height="104.3" rx="2.5" fill="#173A5E"/>
+                            <text x="56" y="23.7" class="data-label" text-anchor="middle">11.89%</text>
+                            <text x="56" y="156" class="year-label" text-anchor="middle">2017</text>
+                        </g>
 
-                        <h3>Historical Return Chart</h3>
+                        <!-- 2018 -->
+                        <g>
+                            <rect x="92" y="39.2" width="36" height="95.8" rx="2.5" fill="#173A5E"/>
+                            <text x="110" y="32.2" class="data-label" text-anchor="middle">10.92%</text>
+                            <text x="110" y="156" class="year-label" text-anchor="middle">2018</text>
+                        </g>
 
-                        <p>
-                            Reserved for verified annual
-                            fund performance data.
-                        </p>
-                    </div>
+                        <!-- 2019 -->
+                        <g>
+                            <rect x="146" y="39.9" width="36" height="95.1" rx="2.5" fill="#173A5E"/>
+                            <text x="164" y="32.9" class="data-label" text-anchor="middle">10.85%</text>
+                            <text x="164" y="156" class="year-label" text-anchor="middle">2019</text>
+                        </g>
+
+                        <!-- 2020 -->
+                        <g>
+                            <rect x="200" y="51.2" width="36" height="83.8" rx="2.5" fill="#173A5E"/>
+                            <text x="218" y="44.2" class="data-label" text-anchor="middle">9.56%</text>
+                            <text x="218" y="156" class="year-label" text-anchor="middle">2020</text>
+                        </g>
+
+                        <!-- 2021 -->
+                        <g>
+                            <rect x="254" y="48.5" width="36" height="86.5" rx="2.5" fill="#173A5E"/>
+                            <text x="272" y="41.5" class="data-label" text-anchor="middle">9.86%</text>
+                            <text x="272" y="156" class="year-label" text-anchor="middle">2021</text>
+                        </g>
+
+                        <!-- 2022 -->
+                        <g>
+                            <rect x="308" y="46.9" width="36" height="88.1" rx="2.5" fill="#173A5E"/>
+                            <text x="326" y="39.9" class="data-label" text-anchor="middle">10.05%</text>
+                            <text x="326" y="156" class="year-label" text-anchor="middle">2022</text>
+                        </g>
+
+                        <!-- 2023 -->
+                        <g>
+                            <rect x="362" y="49.2" width="36" height="85.8" rx="2.5" fill="#173A5E"/>
+                            <text x="380" y="42.2" class="data-label" text-anchor="middle">9.78%</text>
+                            <text x="380" y="156" class="year-label" text-anchor="middle">2023</text>
+                        </g>
+
+                        <!-- 2024 -->
+                        <g>
+                            <rect x="416" y="50.8" width="36" height="84.2" rx="2.5" fill="#173A5E"/>
+                            <text x="434" y="43.8" class="data-label" text-anchor="middle">9.60%</text>
+                            <text x="434" y="156" class="year-label" text-anchor="middle">2024</text>
+                        </g>
+
+                        <!-- 2025 -->
+                        <g>
+                            <rect x="470" y="50.8" width="36" height="84.2" rx="2.5" fill="#173A5E"/>
+                            <text x="488" y="43.8" class="data-label" text-anchor="middle">9.60%</text>
+                            <text x="488" y="156" class="year-label" text-anchor="middle">2025</text>
+                        </g>
+
+                    </svg>
 
                 </div>
 
@@ -1873,19 +1977,19 @@ header {
 
                 <div class="return-card reveal">
                     <small>Since-Inception Average</small>
-                    <strong>10.21%</strong>
+                    <strong>10.20%</strong>
                     <span>Average Net Return</span>
                 </div>
 
                 <div class="return-card reveal">
                     <small>Best Calendar Year</small>
-                    <strong>15.1%</strong>
+                    <strong>11.89%</strong>
                     <span>Calendar Year Return</span>
                 </div>
 
                 <div class="return-card reveal">
                     <small>Worst Calendar Year</small>
-                    <strong>8.2%</strong>
+                    <strong>9.56%</strong>
                     <span>Calendar Year Return</span>
                 </div>
 
@@ -2100,8 +2204,10 @@ header {
                     The fund's stated fee structure
                     includes a 1.75% annual management
                     fee plus up to 10% participation
-                    in profits. Refer to the current
-                    offering documents for full terms.
+                    in profits. These fees are already
+                    reflected in the reported 10.20%
+                    average net return. Refer to the
+                    current offering documents for full terms.
                 </p>
             </details>
 

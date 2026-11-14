@@ -138,15 +138,68 @@ body{
     top:0;
 }
 
+/* Annual returns chart: pure HTML/CSS/SVG, no external libraries. */
 .chart{
     height:210px;
     border:1px solid var(--border);
     background:linear-gradient(to top,#fff,#fbfcfd);
+    padding:10px 12px 7px;
     display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#888;
+    flex-direction:column;
+}
+
+.chart-title{
     font-size:13px;
+    line-height:1.1;
+    font-weight:700;
+    color:var(--navy);
+    letter-spacing:.1px;
+}
+
+.chart-subtitle{
+    margin-top:3px;
+    font-size:9px;
+    color:#697582;
+}
+
+.returns-chart{
+    display:block;
+    width:100%;
+    height:147px;
+    flex-shrink:0;
+    overflow:visible;
+}
+
+.returns-chart .grid-line{
+    stroke:#E5EAF0;
+    stroke-width:1;
+}
+
+.returns-chart .axis-label{
+    fill:#84909B;
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-size:10px;
+}
+
+.returns-chart .data-label{
+    fill:var(--navy);
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-size:11px;
+    font-weight:700;
+}
+
+.returns-chart .year-label{
+    fill:#586572;
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-size:12px;
+    font-weight:600;
+}
+
+.chart-note{
+    color:#697582;
+    font-size:8.6px;
+    line-height:1.1;
+    text-align:center;
 }
 
 .stats{
@@ -276,7 +329,7 @@ body{
         </div>
 
         <div class="card">
-            <div class="value">10.21%</div>
+            <div class="value">10.20%</div>
             <div class="label">Avg Net Return</div>
         </div>
 
@@ -326,7 +379,7 @@ body{
                 <ul>
                     <li>Real estate-backed lending strategy</li>
                     <li>Quarterly income distributions</li>
-                    <li>Professional underwriting &amp; servicing</li>
+                    <li>Professional, conservative underwriting</li>
                     <li>No property management responsibilities</li>
                     <li>Compatible with self-directed IRAs</li>
                 </ul>
@@ -340,18 +393,73 @@ body{
             <div class="section-title">Performance Snapshot</div>
 
             <div class="chart">
-                Insert Performance Chart Here
+                <div class="chart-title">MCS Fund Historical Returns</div>
+                <div class="chart-subtitle">Average annualized return on capital by calendar year</div>
+
+                <svg class="returns-chart" viewBox="0 0 530 170" role="img"
+                     aria-label="MCS Fund historical annualized return on capital, 2017 through 2025. Highest return was 11.89 percent in 2017; lowest was 9.56 percent in 2020.">
+                    <line x1="33" y1="29.8" x2="521" y2="29.8" class="grid-line" />
+                    <line x1="33" y1="64.8" x2="521" y2="64.8" class="grid-line" />
+                    <line x1="33" y1="99.9" x2="521" y2="99.9" class="grid-line" />
+                    <line x1="33" y1="135.0" x2="521" y2="135.0" class="grid-line" />
+                    <g>
+                        <rect x="38" y="30.7" width="36" height="104.3" rx="2.5" fill="#173A5E" />
+                        <text x="56" y="23.7" class="data-label" text-anchor="middle">11.89%</text>
+                        <text x="56" y="156" class="year-label" text-anchor="middle">2017</text>
+                    </g>
+                    <g>
+                        <rect x="92" y="39.2" width="36" height="95.8" rx="2.5" fill="#173A5E" />
+                        <text x="110" y="32.2" class="data-label" text-anchor="middle">10.92%</text>
+                        <text x="110" y="156" class="year-label" text-anchor="middle">2018</text>
+                    </g>
+                    <g>
+                        <rect x="146" y="39.9" width="36" height="95.1" rx="2.5" fill="#173A5E" />
+                        <text x="164" y="32.9" class="data-label" text-anchor="middle">10.85%</text>
+                        <text x="164" y="156" class="year-label" text-anchor="middle">2019</text>
+                    </g>
+                    <g>
+                        <rect x="200" y="51.2" width="36" height="83.8" rx="2.5" fill="#173A5E" />
+                        <text x="218" y="44.2" class="data-label" text-anchor="middle">9.56%</text>
+                        <text x="218" y="156" class="year-label" text-anchor="middle">2020</text>
+                    </g>
+                    <g>
+                        <rect x="254" y="48.5" width="36" height="86.5" rx="2.5" fill="#173A5E" />
+                        <text x="272" y="41.5" class="data-label" text-anchor="middle">9.86%</text>
+                        <text x="272" y="156" class="year-label" text-anchor="middle">2021</text>
+                    </g>
+                    <g>
+                        <rect x="308" y="46.9" width="36" height="88.1" rx="2.5" fill="#173A5E" />
+                        <text x="326" y="39.9" class="data-label" text-anchor="middle">10.05%</text>
+                        <text x="326" y="156" class="year-label" text-anchor="middle">2022</text>
+                    </g>
+                    <g>
+                        <rect x="362" y="49.2" width="36" height="85.8" rx="2.5" fill="#173A5E" />
+                        <text x="380" y="42.2" class="data-label" text-anchor="middle">9.78%</text>
+                        <text x="380" y="156" class="year-label" text-anchor="middle">2023</text>
+                    </g>
+                    <g>
+                        <rect x="416" y="50.8" width="36" height="84.2" rx="2.5" fill="#173A5E" />
+                        <text x="434" y="43.8" class="data-label" text-anchor="middle">9.60%</text>
+                        <text x="434" y="156" class="year-label" text-anchor="middle">2024</text>
+                    </g>
+                    <g>
+                        <rect x="470" y="50.8" width="36" height="84.2" rx="2.5" fill="#173A5E" />
+                        <text x="488" y="43.8" class="data-label" text-anchor="middle">9.60%</text>
+                        <text x="488" y="156" class="year-label" text-anchor="middle">2025</text>
+                    </g>
+                </svg>
+
             </div>
 
             <div class="stats">
 
                 <div class="stat">
-                    <strong>15.1%</strong>
+                    <strong>11.89%</strong>
                     Best Calendar Year Return
                 </div>
 
                 <div class="stat">
-                    <strong>8.2%</strong>
+                    <strong>9.56%</strong>
                     Worst Calendar Year Return
                 </div>
 
@@ -408,7 +516,7 @@ body{
                 <h4>Is the fund liquid?</h4>
                 <p>
                     Redemption requests are typically fulfilled
-                    within 24–48 hours, subject to liquidity and redemption amount. 
+                    within 24–48 hours, subject to liquidity and redemption amount.
                 </p>
             </div>
 
@@ -416,7 +524,9 @@ body{
                 <h4>How are fees structured?</h4>
                 <p>
                     1.75% annual management fee plus up to
-                    10% participation in profits.
+                    10% participation in profits. These fees
+                    are already reflected in the reported
+                    10.20% average net return.
                 </p>
             </div>
 
