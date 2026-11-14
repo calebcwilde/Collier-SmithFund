@@ -1,0 +1,2300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morgan Collier Smith | Private Real Estate Credit</title>
+<meta name="description" content="Morgan Collier Smith Debt Fund — Private real estate credit investment management based in Lake Oswego, Oregon.">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --navy:#173A5E;
+    --dark:#0B223B;
+    --navy-light:#244B70;
+    --gold:#B08D57;
+    --gold-light:#D6BE93;
+    --cream:#FBFAF7;
+    --light:#F6F8FA;
+    --text:#2B2F33;
+    --muted:#687887;
+    --border:#D7DDE5;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+    scroll-padding-top:85px;
+}
+
+body {
+    margin:0;
+    font-family:"DM Sans",Arial,sans-serif;
+    color:var(--text);
+    background:white;
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+button {
+    font:inherit;
+}
+
+.container {
+    max-width:1200px;
+    margin:auto;
+    padding:0 30px;
+}
+
+.section {
+    padding:110px 0;
+}
+
+.eyebrow {
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2.5px;
+    color:var(--gold);
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.eyebrow:before {
+    content:"";
+    display:inline-block;
+    width:24px;
+    height:2px;
+    background:var(--gold);
+    vertical-align:middle;
+    margin-right:12px;
+}
+
+.section-title {
+    font-family:"Manrope",sans-serif;
+    font-size:clamp(34px,4vw,53px);
+    line-height:1.15;
+    font-weight:800;
+    letter-spacing:-2px;
+    color:var(--dark);
+    margin:0 0 24px;
+}
+
+.section-title em {
+    font-family:Georgia,serif;
+    font-weight:400;
+    color:var(--navy-light);
+}
+
+.section-copy {
+    font-size:16px;
+    color:var(--muted);
+    line-height:1.85;
+}
+
+.btn {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px 25px;
+    font-size:13px;
+    font-weight:700;
+    border:1px solid transparent;
+    transition:.25s ease;
+    cursor:pointer;
+}
+
+.btn:hover {
+    transform:translateY(-3px);
+}
+
+.btn-gold {
+    background:var(--gold);
+    color:var(--dark);
+}
+
+.btn-gold:hover {
+    background:var(--gold-light);
+}
+
+.btn-outline {
+    border-color:rgba(255,255,255,.45);
+    color:white;
+}
+
+.btn-outline:hover {
+    background:rgba(255,255,255,.1);
+}
+
+.btn-navy {
+    background:var(--navy);
+    color:white;
+}
+
+.btn-navy:hover {
+    background:var(--dark);
+}
+
+/* TOP BAR */
+
+.topbar {
+    background:var(--dark);
+    color:#C9D5DF;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    padding:11px 0;
+}
+
+.topbar-inner {
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.topbar span:last-child {
+    color:var(--gold-light);
+}
+
+/* NAVIGATION */
+
+header {
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(255,255,255,.97);
+    border-bottom:1px solid #E4E8EC;
+    backdrop-filter:blur(12px);
+}
+
+.nav {
+    height:84px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+}
+
+.brand {
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.brand-icon {
+    background:var(--navy);
+    color:var(--gold-light);
+    width:47px;
+    height:47px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:Georgia,serif;
+    font-size:23px;
+    letter-spacing:-3px;
+    flex-shrink:0;
+}
+
+.brand-text {
+    font-family:Manrope,sans-serif;
+    font-size:13px;
+    font-weight:800;
+    color:var(--dark);
+    letter-spacing:.3px;
+}
+
+.brand-text small {
+    display:block;
+    font-size:10px;
+    color:var(--gold);
+    letter-spacing:2px;
+    margin-top:5px;
+}
+
+.nav-links {
+    display:flex;
+    align-items:center;
+    gap:27px;
+}
+
+.nav-links a {
+    font-size:12px;
+    font-weight:700;
+    color:#536475;
+    transition:.2s;
+}
+
+.nav-links a:hover {
+    color:var(--gold);
+}
+
+.menu-button {
+    display:none;
+    border:1px solid var(--border);
+    background:white;
+    font-size:23px;
+    color:var(--navy);
+    width:44px;
+    height:44px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero {
+    background:
+        radial-gradient(circle at 83% 26%,
+            rgba(125,160,190,.22),transparent 33%),
+        linear-gradient(115deg,#0B223B,#173A5E);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero:after {
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    border:1px solid rgba(214,190,147,.15);
+    border-radius:50%;
+    right:-240px;
+    top:-170px;
+    box-shadow:
+        0 0 0 95px rgba(255,255,255,.018),
+        0 0 0 190px rgba(255,255,255,.012);
+    pointer-events:none;
+}
+
+.hero-grid {
+    min-height:660px;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:80px;
+    align-items:center;
+    position:relative;
+    z-index:1;
+    padding-top:85px;
+    padding-bottom:90px;
+}
+
+.hero h1 {
+    font-family:Manrope,sans-serif;
+    font-size:clamp(47px,5.3vw,76px);
+    line-height:1.07;
+    font-weight:800;
+    letter-spacing:-4px;
+    margin:25px 0;
+}
+
+.hero h1 em {
+    font-family:Georgia,serif;
+    font-weight:400;
+    color:var(--gold-light);
+}
+
+.hero-description {
+    max-width:570px;
+    font-size:17px;
+    line-height:1.8;
+    color:#CEDBE6;
+}
+
+.hero-actions {
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:36px;
+}
+
+.hero-location {
+    margin-top:60px;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#9FB7C9;
+}
+
+.hero-location:before {
+    content:"";
+    display:inline-block;
+    height:1px;
+    width:35px;
+    background:var(--gold);
+    vertical-align:middle;
+    margin-right:15px;
+}
+
+/* HERO INVESTMENT CARD */
+
+.hero-card {
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.19);
+    backdrop-filter:blur(10px);
+    padding:36px;
+    box-shadow:0 25px 75px rgba(0,0,0,.15);
+}
+
+.card-overline {
+    font-size:11px;
+    color:var(--gold-light);
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+.hero-card h2 {
+    font-family:Georgia,serif;
+    font-size:32px;
+    font-weight:400;
+    line-height:1.3;
+    margin:39px 0;
+}
+
+.architecture {
+    height:110px;
+    border-bottom:1px solid var(--gold);
+    margin-bottom:20px;
+    position:relative;
+}
+
+.architecture svg {
+    width:100%;
+    height:100%;
+}
+
+.profile-row {
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    padding:17px 0;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.profile-row:last-child {
+    border:0;
+}
+
+.profile-row span {
+    color:#B8CBD9;
+    font-size:12px;
+}
+
+.profile-row strong {
+    font-size:12px;
+    text-align:right;
+    font-weight:700;
+}
+
+/* FUND METRICS */
+
+.metrics-wrapper {
+    background:var(--cream);
+    border-bottom:1px solid #E5E7E8;
+}
+
+.metrics {
+    display:grid;
+    grid-template-columns:repeat(6,minmax(0,1fr));
+    padding-top:34px;
+    padding-bottom:34px;
+}
+
+.metric {
+    border-left:1px solid var(--border);
+    padding:5px 20px;
+}
+
+.metric:first-child {
+    border:0;
+    padding-left:0;
+}
+
+.metric strong {
+    display:block;
+    font-family:Manrope,sans-serif;
+    font-size:clamp(23px,2vw,33px);
+    font-weight:800;
+    color:var(--navy);
+    letter-spacing:-1.5px;
+}
+
+.metric span {
+    display:block;
+    margin-top:9px;
+    font-size:10px;
+    font-weight:700;
+    color:#758391;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    line-height:1.6;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:100px;
+}
+
+.about-right {
+    border-top:1px solid var(--border);
+    padding-top:25px;
+}
+
+.about-statement {
+    font-family:Georgia,serif;
+    font-size:clamp(23px,2.5vw,33px);
+    line-height:1.5;
+    color:var(--navy);
+    margin:0;
+}
+
+.about-note {
+    margin-top:24px;
+    font-size:15px;
+    line-height:1.9;
+    color:var(--muted);
+}
+
+/* INVESTMENT STRATEGY */
+
+.strategy {
+    background:var(--light);
+}
+
+.strategy-heading {
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:50px;
+    margin-bottom:45px;
+}
+
+.strategy-heading .section-copy {
+    max-width:420px;
+}
+
+.strategy-cards {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.strategy-card {
+    background:white;
+    border:1px solid #E3E9EF;
+    padding:39px 33px;
+    min-height:345px;
+    transition:.25s;
+    position:relative;
+}
+
+.strategy-card:before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:3px;
+    width:65px;
+    background:var(--gold);
+    transition:.3s;
+}
+
+.strategy-card:hover {
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(23,58,94,.09);
+}
+
+.strategy-card:hover:before {
+    width:100%;
+}
+
+.strategy-number {
+    font-size:11px;
+    color:var(--gold);
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.strategy-symbol {
+    width:66px;
+    height:66px;
+    border:1px solid #E6D9C7;
+    background:#FBF9F5;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:Georgia,serif;
+    font-size:28px;
+    color:var(--navy);
+    margin:38px 0 25px;
+}
+
+.strategy-card h3 {
+    font-family:Manrope,sans-serif;
+    font-size:20px;
+    color:var(--dark);
+    margin-bottom:14px;
+}
+
+.strategy-card p {
+    font-size:14px;
+    color:var(--muted);
+    line-height:1.8;
+}
+
+.strategy-banner {
+    margin-top:20px;
+    background:var(--navy);
+    padding:28px 34px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.strategy-banner small {
+    font-size:10px;
+    letter-spacing:1.5px;
+    color:#B7CADA;
+    text-transform:uppercase;
+}
+
+.strategy-banner strong {
+    display:block;
+    margin-top:8px;
+    font-family:Georgia,serif;
+    font-size:26px;
+    font-weight:400;
+}
+
+.strategy-banner p {
+    color:#CEDBE6;
+    font-size:13px;
+}
+
+/* WHY INVEST */
+
+.why-grid {
+    display:grid;
+    grid-template-columns:.85fr 1.15fr;
+    gap:100px;
+    align-items:center;
+}
+
+.why-visual {
+    background:var(--dark);
+    min-height:480px;
+    padding:43px;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.why-visual:after {
+    content:"";
+    width:420px;
+    height:420px;
+    border:1px solid rgba(214,190,147,.5);
+    position:absolute;
+    right:-180px;
+    bottom:-180px;
+    border-radius:50%;
+    box-shadow:
+        0 0 0 75px rgba(255,255,255,.025),
+        0 0 0 145px rgba(255,255,255,.015);
+}
+
+.why-visual small {
+    color:var(--gold-light);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.why-visual blockquote {
+    font-family:Georgia,serif;
+    color:white;
+    font-size:clamp(29px,3vw,44px);
+    line-height:1.35;
+    margin:30px 0;
+    position:relative;
+    z-index:1;
+}
+
+.why-visual blockquote em {
+    color:var(--gold-light);
+}
+
+.why-visual footer {
+    font-size:11px;
+    color:#A9BECE;
+    letter-spacing:1px;
+    background:transparent;
+    border-top:1px solid rgba(255,255,255,.2);
+    padding-top:20px;
+}
+
+.benefits {
+    margin-top:35px;
+}
+
+.benefit {
+    display:flex;
+    gap:18px;
+    border-bottom:1px solid #E5EAEF;
+    padding:18px 0;
+}
+
+.checkmark {
+    color:var(--gold);
+    font-size:22px;
+    flex-shrink:0;
+}
+
+.benefit h3 {
+    color:var(--navy);
+    font-family:Manrope,sans-serif;
+    font-size:15px;
+    margin:0 0 6px;
+}
+
+.benefit p {
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.7;
+    margin:0;
+}
+
+/* PERFORMANCE */
+
+.performance {
+    background:var(--cream);
+}
+
+.performance-header {
+    display:flex;
+    align-items:end;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:40px;
+}
+
+.performance-header .section-copy {
+    max-width:425px;
+}
+
+.performance-grid {
+    display:grid;
+    grid-template-columns:1.75fr .65fr;
+    gap:24px;
+}
+
+.chart-card {
+    background:white;
+    border:1px solid #E2E8ED;
+    padding:28px;
+}
+
+.chart-heading {
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    padding-bottom:21px;
+    border-bottom:1px solid var(--border);
+}
+
+.chart-heading strong {
+    color:var(--navy);
+    font-size:15px;
+}
+
+.chart-heading span {
+    color:var(--gold);
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+.chart-placeholder {
+    height:330px;
+    background:
+        repeating-linear-gradient(
+            0deg,
+            #FAFCFD 0,
+            #FAFCFD 61px,
+            #E8EDF1 62px
+        );
+    border:1px dashed #CCD6DF;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:23px;
+    padding:20px;
+}
+
+.chart-message {
+    background:rgba(255,255,255,.96);
+    padding:29px 35px;
+    border:1px solid #E2E8ED;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(23,58,94,.05);
+}
+
+.chart-message .chart-icon {
+    font-size:37px;
+    color:var(--gold);
+    margin-bottom:12px;
+}
+
+.chart-message h3 {
+    font-size:15px;
+    color:var(--navy);
+    margin:0 0 9px;
+}
+
+.chart-message p {
+    font-size:12px;
+    color:var(--muted);
+    line-height:1.5;
+    margin:0;
+}
+
+.return-stats {
+    display:grid;
+    grid-template-rows:repeat(3,1fr);
+    gap:13px;
+}
+
+.return-card {
+    background:white;
+    border:1px solid #E2E8ED;
+    padding:27px;
+    position:relative;
+}
+
+.return-card:before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:3px;
+    width:55px;
+    background:var(--gold);
+}
+
+.return-card small {
+    display:block;
+    color:#788795;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    margin-bottom:13px;
+}
+
+.return-card strong {
+    font-family:Manrope,sans-serif;
+    font-size:39px;
+    letter-spacing:-2px;
+    color:var(--navy);
+}
+
+.return-card span {
+    display:block;
+    margin-top:7px;
+    font-size:12px;
+    color:var(--muted);
+}
+
+.performance-disclaimer {
+    margin-top:23px;
+    font-size:11px;
+    line-height:1.7;
+    color:var(--muted);
+}
+
+/* MARKET OUTLOOK */
+
+.market {
+    background:var(--navy);
+    color:white;
+    position:relative;
+    overflow:hidden;
+}
+
+.market-grid {
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:90px;
+    align-items:center;
+}
+
+.market h2 {
+    font-family:Manrope,sans-serif;
+    font-size:clamp(31px,3.6vw,45px);
+    letter-spacing:-2px;
+    line-height:1.25;
+    margin:0;
+}
+
+.market p {
+    font-family:Georgia,serif;
+    font-size:20px;
+    line-height:1.85;
+    color:#D6E1EA;
+}
+
+.market-source {
+    margin-top:25px;
+    color:var(--gold-light);
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+/* DIRECTOR / LEADERSHIP */
+
+.leadership-grid {
+    display:grid;
+    grid-template-columns:.85fr 1.15fr;
+    gap:110px;
+    align-items:center;
+}
+
+.portrait-frame {
+    position:relative;
+    max-width:440px;
+    margin:0;
+}
+
+.portrait-back {
+    position:absolute;
+    background:#EEE5D8;
+    top:25px;
+    left:25px;
+    right:-25px;
+    bottom:-25px;
+}
+
+.portrait {
+    position:relative;
+    background:#DCE4EB;
+    overflow:hidden;
+    aspect-ratio:.85;
+    border:9px solid white;
+    box-shadow:0 20px 55px rgba(23,58,94,.14);
+}
+
+.portrait img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+}
+
+.portrait-caption {
+    display:flex;
+    justify-content:space-between;
+    margin-top:22px;
+    color:var(--gold);
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.director-title {
+    color:var(--gold);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:25px;
+}
+
+.director-intro {
+    color:var(--navy);
+    font-family:Georgia,serif;
+    font-size:23px;
+    line-height:1.6;
+}
+
+.director-bio {
+    color:var(--muted);
+    font-size:15px;
+    line-height:1.9;
+}
+
+.expertise {
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+    margin:28px 0 34px;
+}
+
+.expertise span {
+    font-size:11px;
+    font-weight:700;
+    background:var(--light);
+    border:1px solid #E4E9ED;
+    padding:10px 13px;
+    color:#566C7F;
+}
+
+/* FAQ */
+
+.faq-section {
+    background:var(--light);
+}
+
+.faq-grid {
+    display:grid;
+    grid-template-columns:.7fr 1.3fr;
+    gap:90px;
+}
+
+.faq-list {
+    border-top:1px solid #CAD4DC;
+}
+
+.faq-list details {
+    border-bottom:1px solid #CAD4DC;
+}
+
+.faq-list summary {
+    padding:25px 4px;
+    color:var(--navy);
+    font-family:Manrope,sans-serif;
+    font-size:15px;
+    font-weight:800;
+    cursor:pointer;
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.faq-list summary::-webkit-details-marker {
+    display:none;
+}
+
+.faq-list summary:after {
+    content:"+";
+    font-size:23px;
+    color:var(--gold);
+    font-weight:400;
+}
+
+.faq-list details[open] summary:after {
+    content:"−";
+}
+
+.faq-list details p {
+    font-size:14px;
+    line-height:1.85;
+    color:var(--muted);
+    padding:0 25px 25px 4px;
+    margin:0;
+}
+
+/* CONTACT */
+
+.contact {
+    background:var(--cream);
+}
+
+.contact-panel {
+    background:var(--dark);
+    padding:65px;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:55px;
+}
+
+.contact-panel h2 {
+    font-family:Manrope,sans-serif;
+    font-size:37px;
+    line-height:1.25;
+    letter-spacing:-1.5px;
+    margin:0 0 15px;
+}
+
+.contact-panel p {
+    color:#BED0DF;
+    font-size:14px;
+    line-height:1.8;
+    max-width:570px;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background:var(--dark);
+    color:#AFC0CE;
+    padding:65px 0 30px;
+}
+
+.footer-top {
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:55px;
+}
+
+.footer-brand {
+    color:white;
+    font-family:Manrope,sans-serif;
+    font-size:17px;
+    font-weight:800;
+}
+
+.footer-brand small {
+    display:block;
+    color:var(--gold-light);
+    letter-spacing:2px;
+    font-size:10px;
+    margin-top:8px;
+}
+
+.footer-location {
+    font-size:12px;
+    margin-top:20px;
+}
+
+.footer-links {
+    display:flex;
+    gap:26px;
+    flex-wrap:wrap;
+}
+
+.footer-links a {
+    font-size:12px;
+}
+
+.footer-links a:hover {
+    color:var(--gold-light);
+}
+
+.footer-bottom {
+    border-top:1px solid rgba(255,255,255,.15);
+    padding-top:25px;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.footer-bottom p {
+    font-size:10px;
+    line-height:1.9;
+    max-width:850px;
+    margin:0;
+}
+
+.footer-bottom span {
+    font-size:11px;
+    white-space:nowrap;
+}
+
+/* SCROLL ANIMATIONS */
+
+.reveal {
+    opacity:0;
+    transform:translateY(20px);
+    transition:opacity .7s ease,transform .7s ease;
+}
+
+.reveal.visible {
+    opacity:1;
+    transform:none;
+}
+
+/* TABLETS */
+
+@media(max-width:1050px) {
+    .nav-links {
+        gap:14px;
+    }
+
+    .hero-grid {
+        gap:40px;
+    }
+
+    .hero h1 {
+        font-size:60px;
+    }
+
+    .metric {
+        padding:5px 12px;
+    }
+
+    .about-grid,
+    .why-grid,
+    .leadership-grid,
+    .faq-grid {
+        gap:50px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:850px) {
+    .section {
+        padding:75px 0;
+    }
+
+    .nav {
+        height:72px;
+    }
+
+    .nav-links {
+        display:none;
+        position:absolute;
+        top:72px;
+        left:0;
+        width:100%;
+        padding:25px 30px;
+        background:white;
+        box-shadow:0 20px 30px rgba(0,0,0,.1);
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .nav-links.open {
+        display:flex;
+    }
+
+    .menu-button {
+        display:block;
+    }
+
+    .nav .btn {
+        display:none;
+    }
+
+    .hero-grid,
+    .about-grid,
+    .why-grid,
+    .leadership-grid,
+    .faq-grid,
+    .market-grid {
+        grid-template-columns:1fr;
+    }
+
+    .hero-grid {
+        padding-top:75px;
+        padding-bottom:75px;
+    }
+
+    .hero h1 {
+        font-size:55px;
+    }
+
+    .hero-card {
+        max-width:560px;
+    }
+
+    .metrics {
+        grid-template-columns:repeat(3,1fr);
+        gap:20px 0;
+    }
+
+    .metric:nth-child(4) {
+        border:0;
+    }
+
+    .strategy-heading,
+    .performance-header {
+        display:block;
+    }
+
+    .strategy-cards {
+        grid-template-columns:1fr;
+    }
+
+    .strategy-card {
+        min-height:0;
+    }
+
+    .performance-grid {
+        grid-template-columns:1fr;
+    }
+
+    .return-stats {
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:auto;
+    }
+
+    .return-card {
+        padding:20px;
+    }
+
+    .return-card strong {
+        font-size:30px;
+    }
+
+    .portrait-frame {
+        width:80%;
+    }
+
+    .contact-panel {
+        display:block;
+    }
+
+    .contact-panel .btn {
+        margin-top:25px;
+    }
+}
+
+@media(max-width:560px) {
+    .container {
+        padding:0 18px;
+    }
+
+    .topbar-inner span:last-child {
+        display:none;
+    }
+
+    .brand-text {
+        font-size:11px;
+    }
+
+    .hero h1 {
+        font-size:44px;
+        letter-spacing:-2px;
+    }
+
+    .hero-description {
+        font-size:15px;
+    }
+
+    .hero-actions {
+        flex-direction:column;
+    }
+
+    .hero-actions .btn {
+        width:100%;
+    }
+
+    .hero-card {
+        padding:25px;
+    }
+
+    .metrics {
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .metric:nth-child(odd) {
+        border:0;
+    }
+
+    .metric:nth-child(4) {
+        border-left:1px solid var(--border);
+    }
+
+    .metric strong {
+        font-size:25px;
+    }
+
+    .section-title {
+        font-size:35px;
+    }
+
+    .strategy-banner {
+        display:block;
+    }
+
+    .strategy-banner p {
+        margin-top:20px;
+    }
+
+    .why-visual {
+        min-height:380px;
+        padding:30px;
+    }
+
+    .return-stats {
+        grid-template-columns:1fr;
+    }
+
+    .chart-card {
+        padding:17px;
+    }
+
+    .chart-heading {
+        flex-direction:column;
+    }
+
+    .chart-placeholder {
+        height:285px;
+    }
+
+    .market p {
+        font-size:17px;
+    }
+
+    .portrait-frame {
+        width:90%;
+    }
+
+    .contact-panel {
+        padding:38px 25px;
+    }
+
+    .contact-panel h2 {
+        font-size:29px;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction:column;
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .reveal {
+        opacity:1;
+        transform:none;
+    }
+
+    * {
+        scroll-behavior:auto !important;
+        transition:none !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+    <div class="container topbar-inner">
+        <span>Private Credit Investment Management</span>
+        <span>Lake Oswego / Oregon</span>
+    </div>
+</div>
+
+<!-- NAVIGATION -->
+
+<header>
+    <div class="container nav">
+
+        <a href="#home" class="brand">
+            <div class="brand-icon">MC</div>
+            <div class="brand-text">
+                MORGAN COLLIER SMITH
+                <small>DEBT FUND</small>
+            </div>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#strategy">Strategy</a>
+            <a href="#performance">Performance</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#faq">Investor FAQ</a>
+        </nav>
+
+        <a href="#contact" class="btn btn-navy">
+            Connect With Us →
+        </a>
+
+        <button class="menu-button" id="menuButton"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="navLinks">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+    <div class="container hero-grid">
+
+        <div>
+            <div class="eyebrow">
+                Disciplined Real Estate Credit
+            </div>
+
+            <h1>
+                Built on assets.<br>
+                Driven by <em>discipline.</em>
+            </h1>
+
+            <p class="hero-description">
+                A differentiated approach to private mortgage
+                lending — designed to provide investors access
+                to real estate-backed credit opportunities
+                without the day-to-day responsibilities of
+                direct property ownership.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#strategy" class="btn btn-gold">
+                    Explore Our Strategy →
+                </a>
+
+                <a href="#performance" class="btn btn-outline">
+                    Fund Performance →
+                </a>
+            </div>
+
+            <div class="hero-location">
+                Rooted in Lake Oswego, Oregon
+            </div>
+        </div>
+
+        <div class="hero-card">
+
+            <div class="card-overline">
+                Investment Profile
+            </div>
+
+            <h2>
+                Private capital.<br>
+                Real property.<br>
+                Defined strategy.
+            </h2>
+
+            <div class="architecture">
+                <svg viewBox="0 0 350 110" fill="none"
+                     stroke="#D6BE93" stroke-width="1.2">
+                    <path d="M5 105H345"/>
+                    <path d="M25 105V45H90V105"/>
+                    <path d="M25 45L57 25L90 45"/>
+                    <path d="M100 105V22H168V105"/>
+                    <path d="M100 22L134 5L168 22"/>
+                    <path d="M180 105V53H250V105"/>
+                    <path d="M180 53L215 35L250 53"/>
+                    <path d="M262 105V31H330V105"/>
+                    <path d="M262 31L296 12L330 31"/>
+                    <path d="M57 45V105M134 22V105
+                             M215 53V105M296 31V105"/>
+                    <path d="M35 65H80M35 83H80
+                             M112 47H155M112 70H155
+                             M191 75H239M273 57H318
+                             M273 80H318"/>
+                </svg>
+            </div>
+
+            <div class="profile-row">
+                <span>Primary Assets</span>
+                <strong>Real Estate-Backed Loans</strong>
+            </div>
+
+            <div class="profile-row">
+                <span>Typical Loan Terms</span>
+                <strong>6 Months – 3 Years</strong>
+            </div>
+
+            <div class="profile-row">
+                <span>Income Sources</span>
+                <strong>Interest &amp; Fees</strong>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- METRICS -->
+
+<section class="metrics-wrapper">
+    <div class="container metrics">
+
+        <div class="metric">
+            <strong>10</strong>
+            <span>Years Track Record</span>
+        </div>
+
+        <div class="metric">
+            <strong>10.21%</strong>
+            <span>Average Net Return</span>
+        </div>
+
+        <div class="metric">
+            <strong>$50M+</strong>
+            <span>Assets Under Management</span>
+        </div>
+
+        <div class="metric">
+            <strong>70+</strong>
+            <span>Investors</span>
+        </div>
+
+        <div class="metric">
+            <strong>85+</strong>
+            <span>Active Loans</span>
+        </div>
+
+        <div class="metric">
+            <strong>Quarterly</strong>
+            <span>Distributions</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT THE FUND -->
+
+<section class="section" id="about">
+    <div class="container about-grid">
+
+        <div class="reveal">
+            <div class="eyebrow">About the Fund</div>
+
+            <h2 class="section-title">
+                Credit founded on
+                <em>fundamentals.</em>
+            </h2>
+
+            <p class="section-copy">
+                A purpose-built vehicle for participation
+                in a diversified portfolio of real
+                estate-backed mortgage loans and select
+                real estate holdings.
+            </p>
+        </div>
+
+        <div class="about-right reveal">
+
+            <p class="about-statement">
+                The Morgan Collier Smith Debt Fund is a
+                private credit mortgage fund structured
+                as an LLC. Investors own proportional
+                interests in the fund and participate
+                in returns generated by the underlying
+                portfolio.
+            </p>
+
+            <p class="about-note">
+                Our lending focus is straightforward:
+                short-term bridge financing backed by
+                real estate, with returns derived
+                principally from interest and lending
+                fees. The strategy is intended to
+                complement a broadly diversified
+                investment portfolio.
+            </p>
+
+            <p class="about-note">
+                Headquartered in
+                <strong>Lake Oswego, Oregon</strong>,
+                with a focus on professionally
+                underwritten and serviced mortgage
+                investments.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- INVESTMENT STRATEGY -->
+
+<section class="section strategy" id="strategy">
+    <div class="container">
+
+        <div class="strategy-heading reveal">
+            <div>
+                <div class="eyebrow">
+                    Our Investment Strategy
+                </div>
+
+                <h2 class="section-title">
+                    A focused approach to<br>
+                    <em>private lending.</em>
+                </h2>
+            </div>
+
+            <p class="section-copy">
+                Real estate-backed loans, active
+                underwriting, and ongoing servicing
+                form the foundation of the fund's
+                investment approach.
+            </p>
+        </div>
+
+        <div class="strategy-cards">
+
+            <article class="strategy-card reveal">
+                <div class="strategy-number">
+                    01 / ORIGINATION
+                </div>
+
+                <div class="strategy-symbol">⌂</div>
+
+                <h3>Asset-Backed Lending</h3>
+
+                <p>
+                    Financing opportunities anchored
+                    by real estate collateral, with
+                    an emphasis on short-duration
+                    bridge loans.
+                </p>
+            </article>
+
+            <article class="strategy-card reveal">
+                <div class="strategy-number">
+                    02 / UNDERWRITING
+                </div>
+
+                <div class="strategy-symbol">▤</div>
+
+                <h3>Professional Underwriting</h3>
+
+                <p>
+                    Investment decisions guided by
+                    disciplined loan evaluation,
+                    credit analysis, and loan-level
+                    risk consideration.
+                </p>
+            </article>
+
+            <article class="strategy-card reveal">
+                <div class="strategy-number">
+                    03 / SERVICING
+                </div>
+
+                <div class="strategy-symbol">↗</div>
+
+                <h3>Income Generation</h3>
+
+                <p>
+                    Interest and fees from mortgage
+                    loans provide the underlying
+                    source of fund income, with
+                    quarterly distribution options.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="strategy-banner reveal">
+            <div>
+                <small>Typical Loan Duration</small>
+                <strong>6 Months – 3 Years</strong>
+            </div>
+
+            <p>
+                Primarily short-term, real
+                estate-backed bridge loans.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- WHY MORGAN COLLIER SMITH -->
+
+<section class="section" id="advantages">
+    <div class="container why-grid">
+
+        <div class="why-visual reveal">
+            <small>The Morgan Collier Smith Approach</small>
+
+            <blockquote>
+                Income-oriented credit.
+                <em>Rooted in tangible assets.</em>
+            </blockquote>
+
+            <footer>
+                PRIVATE CREDIT / OREGON, USA
+            </footer>
+        </div>
+
+        <div class="reveal">
+
+            <div class="eyebrow">
+                Why Morgan Collier Smith
+            </div>
+
+            <h2 class="section-title">
+                An alternative with
+                <em>a clear purpose.</em>
+            </h2>
+
+            <div class="benefits">
+
+                <div class="benefit">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <h3>Real Estate-Backed Investment Strategy</h3>
+                        <p>
+                            Participation in a portfolio
+                            centered on mortgage lending
+                            secured by real estate.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <h3>Quarterly Distributions</h3>
+                        <p>
+                            Income distributions may be
+                            received in cash or reinvested,
+                            subject to fund terms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <h3>Professional Underwriting &amp; Servicing</h3>
+                        <p>
+                            A structured approach to evaluating
+                            and administering mortgage loans.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <h3>Without Direct Property Management</h3>
+                        <p>
+                            Exposure to mortgage lending
+                            without personally operating
+                            the underlying properties.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit">
+                    <div class="checkmark">✓</div>
+                    <div>
+                        <h3>Self-Directed IRA Compatible</h3>
+                        <p>
+                            May be held through an eligible
+                            self-directed IRA, subject to
+                            custodian and plan requirements.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PERFORMANCE -->
+
+<section class="section performance" id="performance">
+    <div class="container">
+
+        <div class="performance-header reveal">
+            <div>
+                <div class="eyebrow">
+                    Historical Performance
+                </div>
+
+                <h2 class="section-title">
+                    The numbers behind
+                    <em>the strategy.</em>
+                </h2>
+            </div>
+
+            <p class="section-copy">
+                Historical fund performance
+                provides context for the investment
+                strategy. Figures should be
+                reviewed alongside the fund's
+                current reporting and disclosures.
+            </p>
+        </div>
+
+        <div class="performance-grid">
+
+            <div class="chart-card reveal">
+
+                <div class="chart-heading">
+                    <strong>Annual Net Return History</strong>
+                    <span>Performance Chart</span>
+                </div>
+
+                <!--
+                REPLACE THIS PLACEHOLDER WITH YOUR
+                ACTUAL VERIFIED PERFORMANCE CHART.
+
+                Example:
+                <img src="performance-chart.png"
+                     alt="Historical annual fund returns"
+                     style="width:100%;">
+                -->
+
+                <div class="chart-placeholder"
+                     id="performance-chart">
+
+                    <div class="chart-message">
+                        <div class="chart-icon">▥</div>
+
+                        <h3>Historical Return Chart</h3>
+
+                        <p>
+                            Reserved for verified annual
+                            fund performance data.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="return-stats">
+
+                <div class="return-card reveal">
+                    <small>Since-Inception Average</small>
+                    <strong>10.21%</strong>
+                    <span>Average Net Return</span>
+                </div>
+
+                <div class="return-card reveal">
+                    <small>Best Calendar Year</small>
+                    <strong>15.1%</strong>
+                    <span>Calendar Year Return</span>
+                </div>
+
+                <div class="return-card reveal">
+                    <small>Worst Calendar Year</small>
+                    <strong>8.2%</strong>
+                    <span>Calendar Year Return</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="performance-disclaimer">
+            Past performance is not indicative of future results.
+            Returns are not guaranteed. Private credit investments
+            involve risk, including potential loss of principal.
+            Historical performance figures should be verified
+            against official fund reporting.
+        </p>
+
+    </div>
+</section>
+
+<!-- MARKET OUTLOOK -->
+
+<section class="section market" id="outlook">
+    <div class="container market-grid">
+
+        <div class="reveal">
+            <div class="eyebrow">Market Perspective</div>
+
+            <h2>
+                Finding opportunity
+                through market cycles.
+            </h2>
+        </div>
+
+        <div class="reveal">
+            <p>
+                Management believes a slower lending
+                environment and tighter liquidity may
+                create selective opportunities across
+                private credit and distressed lending.
+                The fund is building reserves to pursue
+                opportunities while maintaining an
+                emphasis on income generation and
+                prudent risk management.
+            </p>
+
+            <div class="market-source">
+                Management's Market Outlook
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- LEADERSHIP -->
+
+<section class="section" id="leadership">
+    <div class="container leadership-grid">
+
+        <figure class="portrait-frame reveal">
+
+            <div class="portrait">
+                <img src="./morgan-smith.jpg" alt="Morgan Smith">
+            </div>
+
+            <figcaption class="portrait-caption">
+                <span>Fund Leadership</span>
+                <span>01 / 01</span>
+            </figcaption>
+
+        </figure>
+
+        <div class="reveal">
+
+            <div class="eyebrow">
+                Leadership
+            </div>
+
+            <h2 class="section-title">
+                Meet <em>Morgan Smith.</em>
+            </h2>
+
+            <div class="director-title">
+                Fund Manager | Portfolio Lending
+            </div>
+
+            <p class="director-intro">
+                Private lending expertise shaped
+                by a focus on real estate investors
+                and the credit solutions that serve them.
+            </p>
+
+            <p class="director-bio">
+                Morgan Smith manages the Morgan Collier
+                Smith Debt Fund and has operated
+                Geneva Financial's Portfolio Lending
+                Division, an investor-focused private
+                lender offering bridge financing,
+                fix-and-flip loans, and ground-up
+                construction financing.
+            </p>
+
+            <p class="director-bio">
+                His professional background spans
+                mortgage lending and specialized
+                credit products supporting real
+                estate transactions, with a focus
+                on private financing solutions
+                for investors and borrowers.
+            </p>
+
+            <div class="expertise">
+                <span>Mortgage Lending</span>
+                <span>Bridge Financing</span>
+                <span>Portfolio Lending</span>
+                <span>Real Estate Credit</span>
+            </div>
+
+            <a class="btn btn-navy"
+               href="https://www.linkedin.com/in/morgan-smith-1652559/"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Morgan's LinkedIn →
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- INVESTOR FAQ -->
+
+<section class="section faq-section" id="faq">
+    <div class="container faq-grid">
+
+        <div class="reveal">
+            <div class="eyebrow">
+                Investor Information
+            </div>
+
+            <h2 class="section-title">
+                Frequently asked
+                <em>questions.</em>
+            </h2>
+
+            <p class="section-copy">
+                An overview of the fund's
+                investment structure, distributions,
+                and stated terms. Current governing
+                documents control in the event
+                of any differences.
+            </p>
+        </div>
+
+        <div class="faq-list reveal">
+
+            <details open>
+                <summary>
+                    Should I still diversify?
+                </summary>
+                <p>
+                    Absolutely. As an alternative
+                    investment, the fund is intended
+                    to complement, not replace, a
+                    diversified portfolio of equities
+                    and fixed-income securities.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    What is the minimum investment?
+                </summary>
+                <p>
+                    The stated minimum investment is
+                    $25,000, subject to current
+                    offering documents and investor
+                    eligibility requirements.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    How are returns paid?
+                </summary>
+                <p>
+                    Quarterly distributions may be
+                    taken as cash or reinvested
+                    for potential compounding growth,
+                    subject to fund performance and
+                    distribution policies.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    Is the fund liquid?
+                </summary>
+                <p>
+                    The investor fact sheet describes
+                    redemption requests as typically
+                    fulfilled within 24–48 hours,
+                    subject to liquidity and redemption
+                    amount. Redemptions are not
+                    guaranteed and remain subject
+                    to the fund's governing documents.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    How are fees structured?
+                </summary>
+                <p>
+                    The fund's stated fee structure
+                    includes a 1.75% annual management
+                    fee plus up to 10% participation
+                    in profits. Refer to the current
+                    offering documents for full terms.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    What does the fund invest in?
+                </summary>
+                <p>
+                    Primarily short-term, real
+                    estate-backed bridge loans with
+                    terms ranging from six months
+                    to three years, generating income
+                    from interest and fees.
+                </p>
+            </details>
+
+            <details>
+                <summary>
+                    Can I invest through a self-directed IRA?
+                </summary>
+                <p>
+                    The fund's investor materials
+                    indicate compatibility with
+                    self-directed IRAs. Eligibility
+                    and permissible investments
+                    depend on custodian requirements
+                    and applicable retirement account rules.
+                </p>
+            </details>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact" id="contact">
+    <div class="container">
+
+        <div class="contact-panel reveal">
+
+            <div>
+                <div class="eyebrow">
+                    Start a Conversation
+                </div>
+
+                <h2>
+                    Explore private credit
+                    with purpose.
+                </h2>
+
+                <p>
+                    For fund information and questions
+                    about the investment strategy,
+                    connect with Morgan Smith directly.
+                    This website is informational and
+                    is not an offer of securities.
+                </p>
+            </div>
+
+            <a href="https://www.linkedin.com/in/morgan-smith-1652559/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-gold">
+                Connect With Morgan →
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div>
+                <div class="footer-brand">
+                    MORGAN COLLIER SMITH
+                    <small>DEBT FUND</small>
+                </div>
+
+                <p class="footer-location">
+                    Lake Oswego, Oregon, United States
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#strategy">Strategy</a>
+                <a href="#performance">Performance</a>
+                <a href="#leadership">Leadership</a>
+                <a href="#faq">Investor FAQ</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                Morgan Collier Smith Debt Fund, LLC.
+                For informational purposes only.
+                This website does not constitute an
+                offer to sell or a solicitation to
+                purchase securities. Past performance
+                is not indicative of future results.
+                Private investments involve risk,
+                including loss of principal, and may
+                be illiquid. Investment terms,
+                returns, eligibility, fees, and
+                redemption conditions should be
+                verified against current offering
+                documents before publication.
+            </p>
+
+            <span>
+                © <span id="year">2026</span>
+                Morgan Collier Smith
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+// MOBILE NAVIGATION
+
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
+
+menuButton.addEventListener("click", function() {
+    const isOpen = navLinks.classList.toggle("open");
+
+    menuButton.textContent = isOpen ? "×" : "☰";
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+});
+
+navLinks.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        navLinks.classList.remove("open");
+        menuButton.textContent = "☰";
+        menuButton.setAttribute("aria-expanded", "false");
+    });
+});
+
+// SCROLL ANIMATIONS
+
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+        function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold:0.08
+        }
+    );
+
+    document.querySelectorAll(".reveal").forEach(
+        function(element) {
+            observer.observe(element);
+        }
+    );
+} else {
+    document.querySelectorAll(".reveal").forEach(
+        function(element) {
+            element.classList.add("visible");
+        }
+    );
+}
+
+// CURRENT COPYRIGHT YEAR
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
